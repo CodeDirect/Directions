@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directions - CodeDirect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="inputContainer">
+            <label for="stepInput">Steps</label>
+            <input type="number" min="1" id="stepInput" value="1">
+            <select name="direction" id="stepDirection">
+                <option value="N" selected>North</option>
+                <option value="S">South</option>
+                <option value="E">East</option>
+                <option value="W">West</option>
+            </select>
+            <button id="walkButton" onclick="walk()">Walk</button>
+        </div>
+        <div id="displayContainer"></div>
+        <div id="directionsImages">
+            <img src="North.png" id="northImage" class="directionImages">
+            <img src="South.png" id="southImage" class="directionImages">
+            <img src="East.png" id="eastImage" class="directionImages">
+            <img src="West.png" id="westImage" class="directionImages">
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

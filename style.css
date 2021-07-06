@@ -1,0 +1,54 @@
+body{
+    overflow-x: auto;
+    overflow-y: auto;
+}
+#displayContainer{
+    overflow-x: auto;
+    overflow-y: auto;
+}
+#startingPoint{
+    background-color: yellow;
+}
+#endPoint{
+    background-color: greenyellow;
+}
+.row{
+    margin: 1px 0;
+    display: flex;
+}
+.filledCell{
+    background-color: black;
+}
+.prevLocation{
+    background-color: crimson;
+    color: white;
+}
+.cell{
+    flex: 1;
+    text-align: center;
+    margin: 0 1px;
+    min-width: 14px;
+    min-height: 18px;
+}
+.directionImages{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+#northImage{
+    top: 0px;
+    left: 50%;
+}
+#southImage{
+    bottom: 0px;
+    left: 50%;
+}
+#eastImage{
+    top: 50%;
+    left: 10px;
+}
+#westImage{
+    top: 50%;
+    right: 0px;
+}
